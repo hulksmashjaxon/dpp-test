@@ -1,0 +1,14 @@
+version: '3'
+
+vars:
+  testing_dir: "cmake-build-debug"
+  executable_name: "dpp_test" # change this according to project name in CMakeLists.txt; if it's not the same, it will fail to run
+
+tasks:
+  build-and-test:
+    desc: Build and test the C++ application
+    cmds:
+      - echo -e '\x1b[1;3;95;49mBuilding and testing C++ application...\x1b[0m'
+      - cmake --build .
+      - '"{{.executable_name}}.exe"'
+    dir: '{{.testing_dir}}'

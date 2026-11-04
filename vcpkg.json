@@ -1,0 +1,15 @@
+{
+  "name": "dpp-test",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "name": "ayush272002-dotenv",
+      "version>=": "1.0.2"
+    },
+    {
+      "name": "dpp",
+      "version>=": "10.1.6"
+    }
+  ],
+  "builtin-baseline": "9eec002df1cd109f8f104cd966a763daf9751489"
+}
